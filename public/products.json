@@ -1,0 +1,188 @@
+[
+[
+    {
+        "id":"637f39afbf5c7fcb74462ec1",
+        "category_id": 1,
+        "name": "Bed",
+        "img": "https://i.ibb.co/XWMt5BL/bed.jpg",
+        "location": "Chittagong",
+        "orginal_price": 50100,
+        "resale_price": 30000,
+        "years of use": 7,
+        "seller_name": "Ayon Barua"
+    },
+    {
+        "id":"637f39af9a028cde37b2f10f",
+        "category_id": 1,
+        "name": "Bed Side Table",
+        "img": "https://i.ibb.co/s16R88j/bedside-table.jpg",
+        "location": "Cumilla",
+        "orginal_price": 10000,
+        "resale_price": 6000,
+        "years of use": 2,
+        "seller_name": "Amit Barua"
+    },
+    {
+        "id":"637f39af67842aa761f9d968",
+        "category_id": 1,
+        "name": "Mirror",
+        "img": "https://i.ibb.co/dJN0P3G/mirror.jpg",
+        "location": "Noakhali",
+        "orginal_price": 20000,
+        "resale_price": 17000,
+        "years of use": 5,
+        "seller_name": "Mita Chowdhory"
+    },
+    {
+        "id":"637f39afbf5c7fcb74462fc5",
+        "category_id": 1,
+        "name": "Almirah",
+        "img": "https://i.ibb.co/t3ryJ6G/almira.jpg",
+        "location": "Chittagong",
+        "orginal_price": 55000,
+        "resale_price": 50000,
+        "years of use": 4,
+        "seller_name": "Sima Das"
+    }
+],
+[
+    {
+        "id":"637f39afbf5c7fcb74463fc4",
+        "category_id": 2,
+        "name": "Dinning Table",
+        "img": "https://i.ibb.co/fYbd2xN/dinning-table.jpg",
+        "location": "Chittagong",
+        "orginal_price": 52000,
+        "resale_price": 50000,
+        "years of use": 7,
+        "seller_name": "Ayon Barua"
+    },
+    {
+        "id":"637f39af9a058cde37b2f10f",
+        "category_id": 2,
+        "name": "Console Table",
+        "img": "https://i.ibb.co/DGbYJy7/console-table.jpg",
+        "location": "Cumilla",
+        "orginal_price": 15000,
+        "resale_price": 14000,
+        "years of use": 2,
+        "seller_name": "Amit Barua"
+    },
+    {
+        "id":"637f39aa67842aa761f9d968",
+        "category_id": 2,
+        "name": "Showcase",
+        "img":"https://i.ibb.co/PQM1Dnq/sowcabinet.jpg",
+        "location": "Noakhali",
+        "orginal_price": 20000,
+        "resale_price": 17000,
+        "years of use": 5,
+        "seller_name": "Mita Chowdhory"
+    },
+    {
+        "id":"637f39afbf5d7fcb74462fc5",
+        "category_id": 2,
+        "name": "Shoe Cabinet",
+        "img": "https://i.ibb.co/Km5wkkw/soe-Cabinet.jpg",
+        "location": "Chittagong",
+        "orginal_price": 5000,
+        "resale_price": 4000,
+        "years of use": 4,
+        "seller_name": "Sima Das"
+    }
+],
+
+[
+    {
+        "id":"637f39afbf5c7fcb74463ec2",
+        "category_id": 3,
+        "name": "Sofa",
+        "img": "https://i.ibb.co/47Kkj4T/sofa.jpg",
+        "location": "Rajshahi",
+        "orginal_price": 55000,
+        "resale_price": 50000,
+        "years of use": 7,
+        "seller_name": "Auditi Barua"
+    },
+    {
+        "id":"637f39af9a028cdf47b3f20f",
+        "category_id": 3,
+        "name": "Center Table",
+        "img":"https://i.ibb.co/mtTdVVR/center-table.jpg",
+        "location": "Cumilla",
+        "orginal_price": 10000,
+        "resale_price": 6000,
+        "years of use": 2,
+        "seller_name": "Amit Barua"
+    },
+    {
+        "id":"637f39af67842ab762f9d968",
+        "category_id": 3,
+        "name": "Corner Table",
+        "img": "https://i.ibb.co/Xz7F2mc/corner-table.jpg",
+        "location": "Noakhali",
+        "orginal_price": 5000,
+        "resale_price": 4000,
+        "years of use": 5,
+        "seller_name": "Mita Chowdhory"
+    },
+    {
+        "id":"637f39afbf5c7fcb74563fc5",
+        "category_id": 3,
+        "name": "Tv Cabinet",
+        "img":"https://i.ibb.co/GFbj79H/tv-stand.webp",
+        "location": "Chittagong",
+        "orginal_price": 55000,
+        "resale_price": 50000,
+        "years of use": 4,
+        "seller_name": "Sima Das"
+    }
+],
+
+[
+    {
+        "id":"637f39afbf5c7fbb74464ec3",
+        "category_id": 4,
+        "name": "Cabinet",
+        "img": "https://i.ibb.co/QMc3SRZ/Cabinet-1.webp",
+        "location": "Rangpur",
+        "orginal_price": 21000,
+        "resale_price": 18000,
+        "years of use": 4,
+        "seller_name": "Abdul Aziz"
+    },
+    {
+        "id":"637f39af9a028cde36b2d1f",
+        "category_id": 4,
+        "name": "Shelf",
+        "img": "https://i.ibb.co/nmn7Wpz/Shelf-1.webp",
+        "location": "Barishal",
+        "orginal_price": 3000,
+        "resale_price": 2500,
+        "years of use": 2,
+        "seller_name": "Ariful Islam"
+    },
+    {
+        "id":"637f39af67842aa761f7d66e",
+        "category_id": 4,
+        "name": "Drawer",
+        "img": "https://i.ibb.co/6srT5nr/Drawers.webp",
+        "location": "Sylhet",
+        "orginal_price": 20000,
+        "resale_price": 17000,
+        "years of use": 5,
+        "seller_name": "Sourav Chowdhory"
+    },
+    {
+        "id":"637f39afbf5c7fcb73463fc5",
+        "category_id": 4,
+        "name": "Stool",
+        "img": "https://i.ibb.co/VxHHk7p/Stool-3.webp",
+        "location": "Chittagong",
+        "orginal_price": 7000,
+        "resale_price": 6000,
+        "years of use": 4,
+        "seller_name": "Rony Islam"
+    }
+]
+]
