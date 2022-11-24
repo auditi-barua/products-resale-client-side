@@ -6,6 +6,7 @@ import Cart from "../../Pages/Cart/Cart";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
+import Blog from "../../Pages/Blog/Blog";
 
 export const router = createBrowserRouter([
     {
@@ -35,6 +36,14 @@ export const router = createBrowserRouter([
             {
                 path: '/shop',
                 element: <Shop></Shop>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
+            },
+            {
+                path: '*',
+                element: <div>404 error page</div>
             }
         ]
     }

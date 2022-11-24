@@ -7,7 +7,8 @@ const Navbar = () => {
       <li tabIndex={0}>
         <Link to='/products'> Products</Link></li>
         <li><Link to='/shop'>Shop</Link></li>
-        <li><Link to='cart'>Cart</Link></li>
+        <li><Link to='/cart'>Cart</Link></li>
+        <li><Link to='/blog'>Blog</Link></li>
         <li><Link to='/login'>Login</Link></li>
         <li><Link to='/signup'>SignUp</Link></li>
     </React.Fragment>
