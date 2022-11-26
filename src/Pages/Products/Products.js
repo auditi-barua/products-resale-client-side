@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Product from './Product';
 
-const Products = ({product}) => {
-   // const { name, img, location, seller_name, orginal_price, resale_price } = product;
+const Products = () => {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch('products.json')
+            .then(res => res.json())
+            .then(data => {
+            setProducts(data)
+        })
+    })
     return (
-        <div className='card bg-gray-600  shadow-xl'>
-        <figure className="px-5 pt-5">
-       </figure>
-         <div className="card-body items-center text-center">
-               
-       </div>
-   </div>
+        <div className='mt-10'>
+            <h2 className='text-xl text-center font-bold '>Our Products</h2>
+            <div>
+                {
+                    products.map(product => <Product key={product.id}
+                    product={product}
+                    ></Product>)
+                }
+            </div>
+        </div>
     );
 };
 

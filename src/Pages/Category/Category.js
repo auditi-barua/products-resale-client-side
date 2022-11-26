@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Categories from './Categories';
 
-const Category = ({category}) => {
-    const { category_name,img } = category;
+const Category = () => {
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        fetch('categories.json')
+            .then(res => res.json())
+            .then(data => {
+            setCategories(data)
+        })
+    })
     return (
-        <div className='card bg-gray-600  shadow-xl'>
-             <figure className="px-5 pt-5">
-                <img src={img} alt='' />
-            </figure>
-              <div className="card-body items-center text-center">
-                <h2  className="card-title">{category_name}</h2>
-            </div>
-            <button className='btn btn-secondary'>See product</button>
+        <div className='mt-10'>
+            <h2 className='text-xl text-center font-bold '>Our Categories</h2>
+            <div className=' grid gap-8 grid-cols-1 md:grid-cols-1 lg:grid-cols-4'>
+            {
+                categories.map(category => <Categories key={category.id}
+                category={category}
+                ></Categories>)
+                }
+                </div>
         </div>
     );
 };

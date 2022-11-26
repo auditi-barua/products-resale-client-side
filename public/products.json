@@ -128,13 +128,13 @@
     },
     {
         "id":"637f39afbf5c7fcb74563fc5",
-        "category_id": 3,
+        "id": 3,
         "name": "Tv Cabinet",
         "img":"https://i.ibb.co/GFbj79H/tv-stand.webp",
         "location": "Chittagong",
         "orginal_price": 55000,
         "resale_price": 50000,
-        "years of use": 4,
+        "years_of_use": 4,
         "seller_name": "Sima Das"
     }
 ],
