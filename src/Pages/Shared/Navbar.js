@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FaCouch } from "react-icons/fa";
+import { AuthContext } from '../../Contexts/AuthProvider';
 const Navbar = () => {
-    const items = <React.Fragment>
-      <li><Link to='/home' className='text-blue-600'>Home</Link></li>
-      <li tabIndex={0}>
-        <Link to='/products'> Products</Link></li>
-        <li><Link to='/shop'>Shop</Link></li>
-        <li><Link to='/cart'>Cart</Link></li>
-        <li><Link to='/blog'>Blog</Link></li>
-        <li><Link to='/login'>Login</Link></li>
-        <li><Link to='/signup'>SignUp</Link></li>
+  const { user, logOut } = useContext(AuthContext);
+  
+  const handleLogOut = () => {
+    logOut()
+      .then(() => { })
+    .catch(err =>  console.log(err))
+  }
+  const items = <React.Fragment>
+    <li><Link to='/home' className='text-blue-600'>Home</Link></li>
+    <li tabIndex={0}>
+      <Link to='/products'> Products</Link></li>
+    <li><Link to='/shop'>Shop</Link></li>
+    <li><Link to='/cart'>Cart</Link></li>
+    {user?.uid ?
+            <>
+                 <li><Link to='/blog'>Blog</Link></li>
+                <li><button onClick={handleLogOut}>Sign out</button></li>
+            </>
+            : <li><Link to="/login">Login</Link></li>}
+
     </React.Fragment>
     return (
         <div className="navbar bg-base-100">

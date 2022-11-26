@@ -1,19 +1,23 @@
 [
     {
         "category_id": 1,
-        "category_name": "Bedroom"
+        "category_name": "Bedroom",
+        "img": "https://i.ibb.co/SdYqywy/bedroom.jpg"
     },
     {
         "category_id": 2,
-        "category_name": "Dinning"
+        "category_name": "Dinning",
+        "img": "https://i.ibb.co/60d9mdv/dinningroom.jpg"
     },
     {
         "category_id": 3,
-        "category_name": "Drawing"
+        "category_name": "Drawing",
+        "img": "https://i.ibb.co/gR1YzCK/drawingroom.png"
     },
     {
         "category_id": 4,
-        "category_name": "Kitchen"
+        "category_name": "Kitchen",
+        "img": "https://i.ibb.co/BgBKz4m/kitchenroom.jpg"
     }
 
 ]
