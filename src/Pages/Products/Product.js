@@ -4,20 +4,20 @@ const Product = ({product}) => {
     const { name, img, location, seller_name, orginal_price, resale_price, years_of_use } = product;
     console.log(product);
     return (
-        <div className='card bg-gray-600  shadow-xl'>
-            <figure className="px-5 pt-5">
-                <img src={img} alt='' />
-       </figure>
-            <div className="card-body items-center text-center">
-                <h2 className="card-title">{name}</h2>
-                <p>{location}</p>
-                <p>{seller_name}</p>
-                <p>{orginal_price}</p>
-                <p>{resale_price}</p>
-                <p>{years_of_use}</p>
-            </div>
-            
-   </div>
+        <div className="card w-86 bg-gray-700 text-white hover:scale-110 duration-100 mt-5 shadow-xl">
+         <figure><img src={img} className='w-96 h-48' alt="" /></figure>
+          <div className="card-body">
+                <h2 className="card-title">Product: {name}</h2>
+                <p>Location :{location}</p>
+                <p>Original Price : ${orginal_price}</p>
+                <p>Resale Price : ${resale_price}</p>
+                <p>Usage: {years_of_use} months</p>
+                <p>Seller name: {seller_name}</p>
+      <div className="card-actions justify-end">
+      <button className="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
     );
 };
 

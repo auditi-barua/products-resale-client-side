@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import useToken from '../../hooks/useToken';
-import { FaGoogle, FaFacebook, FaGithub } from "react-icons/fa";
+import Socialauth from '../Social/Socialauth';
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -69,9 +69,7 @@ const Login = () => {
                 </form>
                 <p>Do not have an account? <Link to='/signup' className='text-secondary'>Create a new Account</Link></p>
                 <div className='divider'>or</div>
-                <button className='btn btn-outline w-full'><FaGoogle />CONTNIUE WITH GOOGLE</button>
-                <button className='btn btn-outline w-full'><FaFacebook />CONTNIUE WITH FACEBOOK</button>
-                <button className='btn btn-outline w-full'><FaGithub/>CONTNIUE WITH GITHUB</button>
+                <button className='btn btn-outline w-full'><Socialauth></Socialauth></button>
             </div>
            
         </div>
