@@ -8,6 +8,9 @@ import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
 import Blog from "../../Pages/Blog/Blog";
 import Category from "../../Pages/Category/Category";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import DashboardLayout from "../../layouts/DashboardLayout";
+import MyOrder from "../../Pages/Dashboard/MyOrder/MyOrder";
 
 export const router = createBrowserRouter([
     {
@@ -49,6 +52,16 @@ export const router = createBrowserRouter([
             {
                 path: '*',
                 element: <div>404 error page</div>
+            },
+        ]
+    },
+    {
+        path: '/dashboard',
+        element: <PrivateRoute><DashboardLayout></DashboardLayout> </PrivateRoute>,
+        children: [
+            {
+                path: "/dashboard",
+                element: <MyOrder></MyOrder>
             }
         ]
     }

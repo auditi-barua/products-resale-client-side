@@ -1,7 +1,9 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
-const MyOrders = () => {
+
+
+const AllUser = () => {
     
     const { data: users = [], refetch } = useQuery({
         queryKey: ['users'],
@@ -60,4 +62,4 @@ const MyOrders = () => {
     );
 };
 
-export default MyOrders;
+export default AllUser;

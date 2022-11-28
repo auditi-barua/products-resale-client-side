@@ -18,8 +18,9 @@ const Navbar = () => {
     <li><Link to='/cart'>Cart</Link></li>
     {user?.uid ?
             <>
-                 <li><Link to='/blog'>Blog</Link></li>
-                <li><button onClick={handleLogOut}>Sign out</button></li>
+        <li><Link to='/blog'>Blog</Link></li>
+        <li><Link to='/dashboard'>Dashboard</Link></li>
+         <li><button onClick={handleLogOut}>Sign out</button></li>
             </>
             : <li><Link to="/login">Login</Link></li>}
 
