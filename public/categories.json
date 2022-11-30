@@ -1,21 +1,21 @@
 [
     {
-        "id": 1,
+        
         "category_name": "Bedroom",
         "img": "https://i.ibb.co/SdYqywy/bedroom.jpg"
     },
     {
-        "id": 2,
+       
         "category_name": "Dinning",
         "img": "https://i.ibb.co/60d9mdv/dinningroom.jpg"
     },
     {
-        "id": 3,
+        
         "category_name": "Drawing",
         "img": "https://i.ibb.co/gR1YzCK/drawingroom.png"
     },
     {
-        "id": 4,
+        
         "category_name": "Kitchen",
         "img": "https://i.ibb.co/BgBKz4m/kitchenroom.jpg"
     }

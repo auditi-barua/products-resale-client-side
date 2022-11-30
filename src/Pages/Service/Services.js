@@ -4,28 +4,24 @@ import Service from './Service';
 const Services = () => {
     const service_data = [
         {
-            id: 1,
             name: "Free Shipping",
             img:"https://i.ibb.co/wQznNXg/truck.jpg"  ,
             details: "With free shipping, your order is delivered five to eight days after all your items are available to ship, including pre-order items.",
             bg: "bg-white"
         },
         {
-            id: 2,
             name: "Easy return",
             img: "https://i.ibb.co/qry7Tf1/easy-returns.png",
             details: "If, for any reason, You are not completely satisfied with a purchase We invite You to review our policy on refunds and returns.",
             bg: "bg-blue-200"
         },
         {
-            id: 3,
             name: "Secure Payments",
             img:"https://i.ibb.co/xY4Q3y7/secure-payment.jpg",
             details: "View Secure Returns (www.securereturns.com.au) location in Dhaka, Bangladesh , revenue, industry and description.",
             bg: "bg-white"
         },
         {
-            id: 4,
             name: "Back Gurantee",
             img: "https://i.ibb.co/Pg9y9PP/back-gurantee.png",
             details: "If supplier fails to ship on time or the product quality varies from what has been agreed upon, you may apply for refund on furnitureland within 30 days of ...",
