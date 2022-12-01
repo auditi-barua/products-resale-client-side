@@ -1,115 +1,50 @@
-import React from "react";
-import { useState } from "react";
-import "./Product.scss";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import BalanceIcon from "@mui/icons-material/Balance";
-import useFetch from "../../hooks/useFetch";
-import { useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../../Redux/cartReducer";
+import React from 'react';
 
-const Product = () => {
-  const id = useParams().id;
-  const [selectedImg, setSelectedImg] = useState("img");
-  const [quantity, setQuantity] = useState(1);
+const Product = ({product }) => {
+  const { name, img, location, seller_name, original_price, resale_price, year_of_use } = product;
+  
+  const bookingProducts = event => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const phone = form.phone.value;
 
-  const dispatch = useDispatch();
-  const { data, loading, error } = useFetch(`/products/${id}?populate=*`);
+    const booking = { 
+      email,
+      phone,
+  }
+  }
 
-  return (
-    <div className="product">
-      {loading ? (
-        "loading"
-      ) : (
-        <>
-          <div className="left">
-            <div className="images">
-              <img
-                src={
-                  process.env.REACT_APP_UPLOAD_URL +
-                  data?.attributes?.img?.data?.attributes?.url
-                }
-                alt=""
-                onClick={(e) => setSelectedImg("img")}
-              />
-              <img
-                src={
-                  process.env.REACT_APP_UPLOAD_URL +
-                  data?.attributes?.img2?.data?.attributes?.url
-                }
-                alt=""
-                onClick={(e) => setSelectedImg("img2")}
-              />
-            </div>
-            <div className="mainImg">
-              <img
-                src={
-                  process.env.REACT_APP_UPLOAD_URL +
-                  data?.attributes[selectedImg]?.data?.attributes?.url
-                }
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="right">
-            <h1>{data?.attributes?.title}</h1>
-            <span className="price">${data?.attributes?.price}</span>
-            <p>{data?.attributes?.desc}</p>
-            <div className="quantity">
-              <button
-                onClick={() =>
-                  setQuantity((prev) => (prev === 1 ? 1 : prev - 1))
-                }
-              >
-                -
-              </button>
-              {quantity}
-              <button onClick={() => setQuantity((prev) => prev + 1)}>+</button>
-            </div>
-            <button
-              className="add"
-              onClick={() =>
-                dispatch(
-                  addToCart({
-                    id: data.id,
-                    title: data.attributes.title,
-                    desc: data.attributes.desc,
-                    price: data.attributes.price,
-                    img: data.attributes.img.data.attributes.url,
-                    quantity,
-                  })
-                )
-              }
-            >
-              <AddShoppingCartIcon /> ADD TO CART
-            </button>
-            <div className="links">
-              <div className="item">
-                <FavoriteBorderIcon /> ADD TO WISH LIST
-              </div>
-              <div className="item">
-                <BalanceIcon /> ADD TO COMPARE
-              </div>
-            </div>
-            <div className="info">
-              <span>Vendor: Polo</span>
-              <span>Product Type: T-Shirt</span>
-              <span>Tag: T-Shirt, Women, Top</span>
-            </div>
-            <hr />
-            <div className="info">
-              <span>DESCRIPTION</span>
-              <hr />
-              <span>ADDITIONAL INFORMATION</span>
-              <hr />
-              <span>FAQ</span>
-            </div>
-          </div>
-        </>
-      )}
-    </div>
-  );
+    
+  
+    return (
+        <div className="card card-compact w-86 bg-base-100 scale-105 shadow-xl mt-5">
+  <figure><img src={img} alt="Shoes" className='h-48 w-96' /></figure>
+    <div className="card-body">
+                <h2 className="card-title">Prodcut Name: {name}</h2>
+                <p>Original Price : ${original_price}</p>
+                <p>Resale Price : ${resale_price}</p>
+                <p>Year of use : {year_of_use}monts</p>
+                <p>Seller Name : {seller_name}</p>
+                <p>Location : {location}</p>
+    <div className="card-actions justify-end">
+{/* The button to open modal */}
+<label htmlFor="my-modal-3" className="btn">Book Now</label>
+<input type="checkbox" id="my-modal-3" className="modal-toggle" />
+<div className="modal">
+  <div className="modal-box relative">
+    <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                <h3 className="text-lg font-bold">{name}</h3>
+                <p className="py-4">
+                  
+    </p>
+  </div>
+</div>
+  
+  </div>
+        </div>
+        </div>
+    );
 };
 
 export default Product;

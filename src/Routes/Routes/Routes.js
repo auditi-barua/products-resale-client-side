@@ -1,14 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../layouts/Main";
-import Products from "../../Pages/Products/Products";
-import Cart from "../../Pages/Cart/Cart";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
 import Blog from "../../Pages/Blog/Blog";
+import Cart from "../../Pages/Cart/Cart";
+import Products from "../../Pages/Products/Products";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
-import DashboardLayout from "../../layouts/DashboardLayout";
-import MyOrder from "../../Pages/Dashboard/MyOrder/MyOrder";
+import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard";
 
 export const router = createBrowserRouter([
     {
@@ -29,7 +28,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/cart',
-                element: <Cart></Cart>
+                element:<Cart></Cart>
             },
             {
                 path: '/products',
@@ -44,6 +43,10 @@ export const router = createBrowserRouter([
                 element: <div>404 error page</div>
             },
         ]
+    },
+    {
+        path: '/dashboard',
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
     }
   
 ])

@@ -1,16 +1,16 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Categories from '../../Category/Categories';
-import FeaturedProducts from '../../FeatureProducts/FeatureProdcuts';
+import Products from '../../Products/Products';
 import Services from '../../Service/Services';
 import Banner from '../Banner/Banner';
 
 const Home = () => {
     return (
         <div>
+        
             <Banner></Banner>
-            <FeaturedProducts></FeaturedProducts>
             <Categories></Categories>
-            <FeaturedProducts></FeaturedProducts>
+            <Products></Products>
             <Services></Services>
         </div>
     );

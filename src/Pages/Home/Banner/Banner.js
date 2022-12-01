@@ -1,40 +1,17 @@
-import React, { useState } from "react";
-import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
-import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
-//import "./Slider.scss";
-
+import React from 'react';
+import img1 from '../../../assets/images/img1.jpg'
 const Banner = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const data = [
-    "https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  ];
-
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? 2 : (prev) => prev - 1);
-  };
-  const nextSlide = () => {
-    setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev + 1);
-  };
-
   return (
-    <div className="slider">
-      <div className="container" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
-        <img src={data[0]} alt="" />
-        <img src={data[1]} alt="" />
-        <img src={data[2]} alt="" />
-      </div>
-      <div className="icons">
-        <div className="icon" onClick={prevSlide}>
-          <WestOutlinedIcon />
-        </div>
-        <div className="icon" onClick={nextSlide}>
-          <EastOutlinedIcon />
-        </div>
-      </div>
+    <div className="hero">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <img src={img1} alt='' />
+    <div>
+      <h1 className="text-5xl font-bold">Welcom to Furnitureland</h1>
+      <p className="py-6">We offer a unique selection of stylish and contemporary furniture.Online Furniture: First and Largest Furniture Online shop in Bangladesh. Upto 50% Off on Furniture Price in BD. Types: Sofa, Bed, Dining Table, Almirah etc...</p>
+      <button className="btn btn-primary">Shop Now</button>
     </div>
+  </div>
+</div>
   );
 };
 
