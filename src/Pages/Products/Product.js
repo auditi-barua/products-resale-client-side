@@ -39,7 +39,8 @@ const Product = ({product }) => {
                   <form>
                   <input name="name" type="text" placeholder="Your Name" className="input w-full input-bordered" />
                         <input name="email" type="email" placeholder="Email Address" className="input w-full input-bordered" />
-                        <input name="phone" type="text" placeholder="Phone Number" className="input w-full input-bordered" />
+                    <input name="phone" type="text" placeholder="Phone Number" className="input w-full input-bordered" />
+                    <input value='submit' className='btn btn-accent'/>
                   </form>
                 </p>
   </div>
