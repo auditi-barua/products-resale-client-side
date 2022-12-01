@@ -1,6 +1,5 @@
 [
     {
-        "id":"637f39afbf5c7fcb74462ec1",
         "category_name": "Bedroom",
         "name": "Bed",
         "img": "https://i.ibb.co/XWMt5BL/bed.jpg",
@@ -11,7 +10,6 @@
         "seller_name": "Ayon Barua"
     },
     {
-        "id":"637f39af9a028cde37b2f10f",
         "category_name": "Bedroom",
         "name": "Bed Side Table",
         "img": "https://i.ibb.co/s16R88j/bedside-table.jpg",
@@ -22,7 +20,6 @@
         "seller_name": "Amit Barua"
     },
     {
-        "id":"637f39af67842aa761f9d968",
         "category_name": "Bedroom",
         "name": "Mirror",
         "img": "https://i.ibb.co/dJN0P3G/mirror.jpg",
@@ -33,7 +30,6 @@
         "seller_name": "Mita Chowdhory"
     },
     {
-        "id":"637f39afbf5c7fcb74462fc5",
         "category_name": "Bedroom",
         "name": "Almirah",
         "img": "https://i.ibb.co/t3ryJ6G/almira.jpg",
@@ -46,7 +42,6 @@
     
 
     {
-        "id":"637f39afbf5c7fcb74463fc4",
         "category_name": "Dinning ",
         "name": "Dinning Table",
         "img": "https://i.ibb.co/fYbd2xN/dinning-table.jpg",
@@ -57,7 +52,6 @@
         "seller_name": "Ayon Barua"
     },
      {
-        "id":"637f39af9a058cde37b2f10f",
         "category_name": "Dinning ",
         "name": "Console Table",
         "img": "https://i.ibb.co/DGbYJy7/console-table.jpg",
@@ -68,7 +62,6 @@
         "seller_name": "Amit Barua"
     },
     {
-        "id":"637f39aa67842aa761f9d968",
         "category_name": "Dinning ",
         "name": "Showcase",
         "img":"https://i.ibb.co/PQM1Dnq/sowcabinet.jpg",
@@ -79,7 +72,6 @@
         "seller_name": "Mita Chowdhory"
     },
     {
-        "id":"637f39afbf5d7fcb74462fc5",
         "category_name": "Dinning ",
         "name": "Shoe Cabinet",
         "img": "https://i.ibb.co/Km5wkkw/soe-Cabinet.jpg",
@@ -90,8 +82,6 @@
         "seller_name": "Sima Das"
     },
     {
-        "id":"637f39afbf5c7fcb74463ec2",
-        "category_name": "Drawing ",
         "name": "Sofa",
         "img": "https://i.ibb.co/47Kkj4T/sofa.jpg",
         "location": "Rajshahi",
@@ -101,7 +91,6 @@
         "seller_name": "Auditi Barua"
     },
     {
-        "id":"637f39af9a028cdf47b3f20f",
         "category_name": "Drawing ",
         "name": "Center Table",
         "img":"https://i.ibb.co/mtTdVVR/center-table.jpg",
@@ -112,7 +101,6 @@
         "seller_name": "Amit Barua"
     },
     {
-        "id":"637f39af67842ab762f9d968",
         "category_name": "Drawing ",
         "name": "Corner Table",
         "img": "https://i.ibb.co/Xz7F2mc/corner-table.jpg",
@@ -123,7 +111,6 @@
         "seller_name": "Mita Chowdhory"
     },
     {
-        "id":"637f39afbf5c7fcb74563fc5",
         "category_name": "Drawing ",
         "name": "Tv Cabinet",
         "img":"https://i.ibb.co/GFbj79H/tv-stand.webp",
@@ -134,7 +121,6 @@
         "seller_name": "Sima Das"
     },
     {
-        "id":"637f39af9a028cde36b2d1f",
         "category_name": "Kitchen ",
         "name": "Shelf",
         "img": "https://i.ibb.co/nmn7Wpz/Shelf-1.webp",
@@ -145,7 +131,6 @@
         "seller_name": "Ariful Islam"
     },
     {
-        "id":"637f39af67842aa761f7d66e",
         "category_name": "Kitchen ",
         "name": "Drawer",
         "img": "https://i.ibb.co/6srT5nr/Drawers.webp",
@@ -156,7 +141,6 @@
         "seller_name": "Sourav Chowdhory"
     },
     {
-        "id":"637f39afbf5c7fcb73463fc5",
         "category_name": "Kitchen ",
         "name": "Stool",
         "img": "https://i.ibb.co/VxHHk7p/Stool-3.webp",
@@ -167,7 +151,6 @@
         "seller_name": "Rony Islam"
     },
     {
-        "id":"637f39afbf5c7fbb74464ec3",
         "category_name": "Kitchen ",
         "name": "Cabinet",
         "img": "https://i.ibb.co/QMc3SRZ/Cabinet-1.webp",
