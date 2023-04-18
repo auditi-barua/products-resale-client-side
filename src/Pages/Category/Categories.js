@@ -7,7 +7,7 @@ const Categories = () => {
             .then(res => res.json())
             .then(data => {
                 setCategories(data);
-            });
+            }); 
     },[]);
     return (
         <div>
