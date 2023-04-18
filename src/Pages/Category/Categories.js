@@ -15,7 +15,7 @@ const Categories = () => {
             <div className='flex justify-center  '>
             {
                 categories.map(category => <Category key={category._id}
-                category={category}
+                    category={category}
                 ></Category>)
             }   
             </div>
